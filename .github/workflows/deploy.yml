@@ -40,7 +40,7 @@ jobs:
         uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
-          
+
       - name: Enable Artifact Registry API
         run: |
           gcloud services enable artifactregistry.googleapis.com \
@@ -63,7 +63,6 @@ jobs:
 
       - name: Create Terraform state bucket if not exists
         run: |
-          BUCKET_NAME="tf-state-$PROJECT_ID"
           if ! gsutil ls -b gs://$BUCKET_NAME >/dev/null 2>&1; then
             gsutil mb -p $PROJECT_ID -l $REGION gs://$BUCKET_NAME
             gsutil versioning set on gs://$BUCKET_NAME
