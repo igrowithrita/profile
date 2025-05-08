@@ -8,7 +8,7 @@ terraform {
   required_version = ">= 1.3.0"
 
   backend "gcs" {
-    bucket = "${var.project_id}-tf-state"
+    bucket = "${var.tf_bucket_name}"
     prefix = "igrow"
   }
 
@@ -35,17 +35,22 @@ resource "google_cloud_run_service" "flutter_web" {
     percent         = 100
     latest_revision = true
   }
-}
-
-resource "google_cloud_run_domain_mapping" "custom_domain" {
-  location = var.region
-  name     = var.domain_name
-
   metadata {
-    namespace = var.project_id
-  }
-
-  spec {
-    route_name = google_cloud_run_service.flutter_web.name
+    annotations = {
+      "run.googleapis.com/ingress" = "all" # Allow public ingress
+    }
   }
 }
+
+# resource "google_cloud_run_domain_mapping" "custom_domain" {
+#   location = var.region
+#   name     = var.domain_name
+
+#   metadata {
+#     namespace = var.project_id
+#   }
+
+#   spec {
+#     route_name = google_cloud_run_service.flutter_web.name
+#   }
+# }

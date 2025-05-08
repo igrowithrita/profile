@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "igrowwithrita",
+  "private_key_id": "56ef0f615f9905e8db56ae69fe81b92018672f8a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3nBMSdyE2ex51\nTBJQbbSIoBLOMwfyEdohi3taFhlej+HPnloesw8p78fjqLK3uxffeEUEfogYpPzo\ncYcYc3o61onr1CBoX7BbW027+cmyGn/AooS0tltQlYNN2rx7dT5ZbNmOrkEgSPcM\nMytb6CBgSiR4EpKNOvqVOiNDiU0k03BkvcVMypgegp7SRUzxkyJDXWhuKCQ3HR//\np/9vLXoWgBi92yPaSs4F6bY53ztMirx/5hCmVNWIPD9Wgjgah4Sqeug6EKFUteNw\n05Yai0tIUep0zxW293P9wSWWltwB9FPJeXnDDMrcmUA17NL4BWH/E5EAxDeu3zD4\nlWlNzC4TAgMBAAECggEAQF1IGksEq5KRZNEcAnHSvapPrVUaTfOQIf5BaZ0hm5KY\nuC1sriJbCHpz+gyjSeEeR0pj92Vb1DfSKLHTh/DDQmj+xFsCWVRiAESLhX/VAshj\nTGYsWyUp8Z/X/azWMfkxuCt+QJQ5ZFXvtKkjY/6FivuyuRzZnwSz3ygYQI6bKnMU\niKrKOFxVtCy2dOW5fCUVkA6N73l5Ih2oyTAmRaqFwuKz6ezrW3N6KNiwb/2eMM31\nesLqFjKpblSRQ/IBdqAOW+KJuHTTbxEUgK9A+NlPUWzRwzycUILQZIBOgOlCmr3m\nFs1rteA3oENmBosKsCC6bphkoSqOGg70Gjx+5YX5kQKBgQDb0sZ/iyUA5pLbVha6\nHQr1syGT2Jvac/GbFbuymQ4OI/e5DlsYbLHuiuEc9Dz7MgQS7UydUhCmsqFJENiz\neOR6seWj2UvO+E9PD0ufSh58P6dZ+mmxPrujIfe98yqt4jX8rnj5HCSTM4xIPQvJ\nU4cn2UhqVqKd1wxlvO0UZ30xdQKBgQDV05scF0k22Q9nHRuJeLT+nn7YPR+dUUHR\nR1X24ZGk5RbLiwfokY68tfLPmQzGmGVi2df0FeyDgqgXzpLWZFVRBQfu7BKrDK1/\nqFYuTijsa8VWx2Pnf8xgHvivRkT8AKvPsAMU/vAXBzhbPCYWpQMc2VfaAWPo/w6y\ncAugLocoZwKBgQCdA0lrMp0kroz5A93J5BK++ssiClcQSz6osnZWFELY0NIRqXJh\n2MmjBCnU/5NLLSeByWOu/z4Lg432XYUbdF9mUAkh5oTiebRUWS1/wnZR8zl66IVz\n58YouIt3bufuOaSsLocUEAkD547szkXL8NCaIvY5llYi/cbKKI8CwwTGPQKBgAwh\ncx1G3Op1qgAJkLRd2rbPOxb9cLu2DmvXBjN5XI/kR0TI4Gv7RgPCtsG8RxNFNgtD\nnJLGY6KaWPrwxzfOfWCZTnfpgK2fjIA/hpQd7whqnMltimdpwqh5WVZoQCWjzBt+\nOs6IIArOaA4U/XwvZFvQoMFHbuma/rR00tQFj7llAoGBAKm3zek2a2vcl7Zpv+Xb\njiIV0ByLV85mcBYRaV9tO3fGIyTNrEe5ayMjC16SKnf88+2XPmglcTOKEqCFtbwA\nVDsK7sVoKAsOJ3Opb0jiJvr3XcNrtox+73mgW06Wrrai12OA785yBKob6evY3tMc\n47etYUaERpiy54GpVrrsmxvK\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@igrowwithrita.iam.gserviceaccount.com",
+  "client_id": "108126699405822448152",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40igrowwithrita.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
