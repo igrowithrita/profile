@@ -40,6 +40,11 @@ jobs:
         uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
+          
+      - name: Enable Artifact Registry API
+        run: |
+          gcloud services enable artifactregistry.googleapis.com \
+            --project=$PROJECT_ID
 
       - name: Configure Docker for GCR
         run: gcloud auth configure-docker
