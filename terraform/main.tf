@@ -8,7 +8,7 @@ terraform {
   required_version = ">= 1.3.0"
 
   backend "gcs" {
-    bucket = "${var.tf_bucket_name}"
+    bucket = "igrowwithrita-tf-state"
     prefix = "igrow"
   }
 
