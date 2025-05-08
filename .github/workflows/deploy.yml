@@ -49,9 +49,11 @@ jobs:
           gcloud auth activate-service-account --key-file=/tmp/account.json
           gcloud config set project $PROJECT_ID
 
-      - name: Enable Artifact Registry API
+      - name: Enable the needed services
         run: |
           gcloud services enable artifactregistry.googleapis.com \
+            --project=$PROJECT_ID
+          gcloud services enable run.googleapis.com \
             --project=$PROJECT_ID
 
       - name: Configure Docker for GCR
