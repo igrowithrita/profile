@@ -43,7 +43,9 @@ jobs:
 
       - name: Set up ADC for gsutil
         run: |
-          echo "${{ secrets.GCP_SA_KEY }}" | base64 -d > /tmp/account.json
+          cat <<EOF > /tmp/account.json
+          ${{ secrets.GCP_SA_KEY }}
+          EOF
           gcloud auth activate-service-account --key-file=/tmp/account.json
           gcloud config set project $PROJECT_ID
 
