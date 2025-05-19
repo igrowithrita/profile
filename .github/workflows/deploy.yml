@@ -3,13 +3,13 @@ name: Deploy Flutter Web to GCP
 on:
   push:
     branches:
-      - main
+      - prod
 
 # Secrets
 # - GCP_PROJECT_ID: The Google Cloud project ID where the resources will be created.
 # - GCP_REGION: The Google Cloud region where the resources will be created.
-# - DOMAIN_NAME: The domain name for the Cloud Run service.
 # - GCP_SA_KEY: The service account key in JSON format for authentication.
+# - DOMAIN_NAME: The domain name for the Cloud Run service.
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   REGION: ${{ secrets.GCP_REGION }}
