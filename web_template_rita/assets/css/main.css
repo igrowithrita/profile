@@ -687,9 +687,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-.hero {
+.home {
   width: 100%;
   min-height: calc(100vh - 82px);
   position: relative;
@@ -700,12 +700,12 @@ section,
 }
 
 @media (max-width: 1200px) {
-  .hero {
+  .home {
     min-height: calc(100vh - 68px);
   }
 }
 
-.hero img {
+.home img {
   position: absolute;
   inset: 0;
   display: block;
@@ -715,24 +715,24 @@ section,
   z-index: 1;
 }
 
-.hero .container {
+.home .container {
   position: relative;
   z-index: 3;
 }
 
-.hero h2 {
+.home h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
 }
 
-.hero p {
+.home p {
   margin: 10px 0 0 0;
   font-size: 24px;
   color: var(--heading-color);
 }
 
-.hero .btn-get-started {
+.home .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
@@ -747,16 +747,16 @@ section,
   margin-top: 30px;
 }
 
-.hero .btn-get-started:hover {
+.home .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .home h2 {
     font-size: 32px;
   }
 
-  .hero p {
+    .home p {
     font-size: 18px;
   }
 }
