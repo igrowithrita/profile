@@ -4,9 +4,203 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Kelly Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>IGrow with Rita - Professional Business Growth</title>
+  <meta name="description" content="Start your professional business growth right now with IGrow with Rita. Digital marketing, content creation, branding, and more.">
+  <meta name="keywords" content="business growth, digital marketing, content creation, branding, web development, printing, ads management">
+
+  <script>
+    // Website Content Data
+    const websiteData = {
+      // Site Information
+      site: {
+        title: "IGrow",
+        subtitle: "with Rita",
+        tagline: "Start your professional business growth right now with us"
+      },
+      
+      // Navigation Menu
+      navigation: [
+        { name: "Home", href: "#home", active: true },
+        { name: "Services", href: "#services", active: false },
+        { name: "Portfolio", href: "#portfolio", active: false },
+        { name: "Contact", href: "#contact", active: false }
+      ],
+      
+      // Social Media Links
+      socialLinks: [
+        { platform: "twitter", icon: "bi-twitter-x", href: "#" },
+        { platform: "facebook", icon: "bi-facebook", href: "#" },
+        { platform: "instagram", icon: "bi-instagram", href: "#" },
+        { platform: "linkedin", icon: "bi-linkedin", href: "#" }
+      ],
+      
+      // Home Section
+      home: {
+        title: "IGrow with Rita",
+        description: "Start your professional business growth<br>right now with us",
+        ctaText: "Services",
+        ctaLink: "#services",
+        backgroundImage: "assets/img/home-bg.jpg"
+      },
+      
+      // Services Section
+      services: {
+        title: "Services",
+        description: "",
+        items: [
+          {
+            title: "Digital Marketing",
+            description: "Enhance your brand's online presence through strategic, audience-driven initiatives tailored to achieve your objectives.",
+            icon: "bi-easel",
+            color: "item-teal",
+            delay: "300"
+          },
+          {
+            title: "Content Creation",
+            description: "Produce expertly crafted, high-caliber content that captivates your target audience and advances your strategic objectives.",
+            icon: "bi-activity",
+            color: "item-cyan",
+            delay: "100"
+          },
+          {
+            title: "Branding",
+            description: "Establish a cohesive brand identity that embodies your core values, differentiates you in the marketplace, and aligns with your strategic objectives.",
+            icon: "bi-broadcast",
+            color: "item-orange",
+            delay: "200"
+          },
+          {
+            title: "App & Web Development",
+            description: "Design and implement scalable, responsive web and mobile applications that deliver seamless user experiences and drive your strategic goals forward.",
+            icon: "bi-bounding-box-circles",
+            color: "item-red",
+            delay: "400"
+          },
+          {
+            title: "Printing",
+            description: "Deliver precision-driven printing for garments, wall graphics, and promotional surfaces, ensuring your brand's logo is reproduced with exceptional clarity, consistency, and impact.",
+            icon: "bi-calendar4-week",
+            color: "item-indigo",
+            delay: "500"
+          },
+          {
+            title: "Ads Management",
+            description: "Expand your brand's reach with targeted digital ads, optimizing visibility and driving conversions effectively.",
+            icon: "bi-chat-square-text",
+            color: "item-pink",
+            delay: "600"
+          }
+        ]
+      },
+      
+      // Portfolio Section
+      portfolio: {
+        title: "Portfolio",
+        description: "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit",
+        filters: [
+          { name: "All", filter: "*", active: true },
+          { name: "App", filter: ".filter-app", active: false },
+          { name: "Card", filter: ".filter-product", active: false },
+          { name: "Web", filter: ".filter-branding", active: false }
+        ],
+        items: [
+          {
+            title: "App 1",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-1.jpg",
+            category: "filter-app",
+            gallery: "portfolio-gallery-app"
+          },
+          {
+            title: "Product 1",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-2.jpg",
+            category: "filter-product",
+            gallery: "portfolio-gallery-product"
+          },
+          {
+            title: "Branding 1",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-3.jpg",
+            category: "filter-branding",
+            gallery: "portfolio-gallery-branding"
+          },
+          {
+            title: "App 2",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-4.jpg",
+            category: "filter-app",
+            gallery: "portfolio-gallery-app"
+          },
+          {
+            title: "Product 2",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-5.jpg",
+            category: "filter-product",
+            gallery: "portfolio-gallery-product"
+          },
+          {
+            title: "Branding 2",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-6.jpg",
+            category: "filter-branding",
+            gallery: "portfolio-gallery-branding"
+          },
+          {
+            title: "App 3",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-7.jpg",
+            category: "filter-app",
+            gallery: "portfolio-gallery-app"
+          },
+          {
+            title: "Product 3",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-8.jpg",
+            category: "filter-product",
+            gallery: "portfolio-gallery-product"
+          },
+          {
+            title: "Branding 3",
+            description: "Lorem ipsum, dolor sit",
+            image: "assets/img/masonry-portfolio/masonry-portfolio-9.jpg",
+            category: "filter-branding",
+            gallery: "portfolio-gallery-branding"
+          }
+        ]
+      },
+      
+      // Contact Section
+      contact: {
+        title: "Contact",
+        description: "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit",
+        info: [
+          {
+            title: "Address",
+            value: "Beirut, Lebanon",
+            icon: "bi-geo-alt",
+            delay: "200"
+          },
+          {
+            title: "Call Us",
+            value: "+961 81 629 013",
+            icon: "bi-telephone",
+            delay: "300"
+          },
+          {
+            title: "Email Us",
+            value: "igrowithrita@gmail.com",
+            icon: "bi-envelope",
+            delay: "400"
+          }
+        ],
+        map: {
+          src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50346.01760322915!2d35.501776!3d33.893791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151e76be11d9af4f%3A0x9d8de03e78a9b4ba!2sBeirut%2C%20Lebanon!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus",
+          height: "350px"
+        }
+      }
+    };
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -46,26 +240,20 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">IGrow</h1>
+        <h1 class="sitename" id="site-title">IGrow</h1>
         <br>
-        <h6>with Rita</h6>
+        <h6 id="site-subtitle">with Rita</h6>
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul id="navigation-menu">
+          <!-- Navigation items will be populated by JavaScript -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="header-social-links" id="social-links">
+        <!-- Social links will be populated by JavaScript -->
       </div>
 
     </div>
@@ -76,14 +264,14 @@
     <!-- Home Section -->
     <section id="home" class="home section">
 
-      <img src="assets/img/home-bg.jpg" alt="" data-aos="fade-in">
+      <img id="home-bg" src="assets/img/home-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>IGrow with Rita</h2>
-            <p>Start your professional business growth<br>right now with us</p>
-            <a href="#services" class="btn-get-started">Services</a>
+            <h2 id="home-title">IGrow with Rita</h2>
+            <p id="home-description">Start your professional business growth<br>right now with us</p>
+            <a id="home-cta" href="#services" class="btn-get-started">Services</a>
           </div>
         </div>
       </div>
@@ -454,6 +642,140 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Content Population Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Populate site title and subtitle
+      document.getElementById('site-title').textContent = websiteData.site.title;
+      document.getElementById('site-subtitle').textContent = websiteData.site.subtitle;
+      
+      // Populate navigation menu
+      const navMenu = document.getElementById('navigation-menu');
+      navMenu.innerHTML = '';
+      websiteData.navigation.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = item.href;
+        a.textContent = item.name;
+        if (item.active) {
+          a.className = 'active';
+        }
+        li.appendChild(a);
+        navMenu.appendChild(li);
+      });
+      
+      // Populate social links
+      const socialLinks = document.getElementById('social-links');
+      socialLinks.innerHTML = '';
+      websiteData.socialLinks.forEach(link => {
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.className = link.platform;
+        const i = document.createElement('i');
+        i.className = `bi ${link.icon}`;
+        a.appendChild(i);
+        socialLinks.appendChild(a);
+      });
+      
+      // Populate home section
+      document.getElementById('home-bg').src = websiteData.home.backgroundImage;
+      document.getElementById('home-title').textContent = websiteData.home.title;
+      document.getElementById('home-description').innerHTML = websiteData.home.description;
+      document.getElementById('home-cta').textContent = websiteData.home.ctaText;
+      document.getElementById('home-cta').href = websiteData.home.ctaLink;
+      
+      // Populate services section
+      const servicesContainer = document.querySelector('#services .row.gy-4');
+      servicesContainer.innerHTML = '';
+      websiteData.services.items.forEach(service => {
+        const serviceHTML = `
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="${service.delay}">
+            <div class="service-item ${service.color} position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                  </path>
+                </svg>
+                <i class="bi ${service.icon}"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>${service.title}</h3>
+              </a>
+              <p>${service.description}</p>
+            </div>
+          </div>
+        `;
+        servicesContainer.innerHTML += serviceHTML;
+      });
+      
+      // Populate portfolio section
+      const portfolioTitle = document.querySelector('#portfolio .section-title h2');
+      const portfolioDescription = document.querySelector('#portfolio .section-title p');
+      portfolioTitle.textContent = websiteData.portfolio.title;
+      portfolioDescription.textContent = websiteData.portfolio.description;
+      
+      // Populate portfolio filters
+      const portfolioFilters = document.querySelector('.portfolio-filters');
+      portfolioFilters.innerHTML = '';
+      websiteData.portfolio.filters.forEach(filter => {
+        const li = document.createElement('li');
+        li.setAttribute('data-filter', filter.filter);
+        li.textContent = filter.name;
+        if (filter.active) {
+          li.className = 'filter-active';
+        }
+        portfolioFilters.appendChild(li);
+      });
+      
+      // Populate portfolio items
+      const portfolioContainer = document.querySelector('.isotope-container');
+      portfolioContainer.innerHTML = '';
+      websiteData.portfolio.items.forEach(item => {
+        const portfolioHTML = `
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item ${item.category}">
+            <img src="${item.image}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>${item.title}</h4>
+              <p>${item.description}</p>
+              <a href="${item.image}" title="${item.title}" data-gallery="${item.gallery}"
+                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        `;
+        portfolioContainer.innerHTML += portfolioHTML;
+      });
+      
+      // Populate contact section
+      const contactTitle = document.querySelector('#contact .section-title h2');
+      const contactDescription = document.querySelector('#contact .section-title p');
+      contactTitle.textContent = websiteData.contact.title;
+      contactDescription.textContent = websiteData.contact.description;
+      
+      // Populate contact info
+      const contactInfoContainer = document.querySelector('#contact .col-lg-6');
+      contactInfoContainer.innerHTML = '';
+      websiteData.contact.info.forEach(info => {
+        const infoHTML = `
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="${info.delay}">
+            <i class="bi ${info.icon} flex-shrink-0"></i>
+            <div>
+              <h3>${info.title}</h3>
+              <p>${info.value}</p>
+            </div>
+          </div>
+        `;
+        contactInfoContainer.innerHTML += infoHTML;
+      });
+      
+      // Populate map
+      const mapContainer = document.querySelector('.map-wrap iframe');
+      mapContainer.src = websiteData.contact.map.src;
+      mapContainer.style.height = websiteData.contact.map.height;
+    });
+  </script>
 
 </body>
 
