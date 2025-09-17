@@ -1199,6 +1199,61 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
+  width: 100%;
+    max-width: 300px;
+    /* Allows 4 items per row with spacing */
+    height: 300px;
+    /* Square aspect ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 0 auto 20px auto;
+    /* Center the item within its column with bottom margin */
+  }
+  
+  /* Ensure 4 items per row on larger screens */
+  @media (min-width: 1200px) {
+    .portfolio .isotope-container .col-lg-4 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .portfolio .portfolio-item {
+      max-width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .portfolio .portfolio-item {
+      max-width: 280px;
+      height: 280px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .portfolio .portfolio-item {
+      max-width: 150px;
+      height: 150px;
+    }
+  
+    .portfolio .isotope-container .col-lg-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  .portfolio .portfolio-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1252,6 +1307,16 @@ section,
   bottom: 0;
 }
 
+/* Center single portfolio items when there's only one in a row */
+.portfolio .isotope-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio .isotope-container .portfolio-item {
+  margin: 0 15px 30px 15px;
+}
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/

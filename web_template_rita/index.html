@@ -28,9 +28,9 @@
       
       // Social Media Links
       socialLinks: [
+        { platform: "instagram", icon: "bi-instagram", href: "#" },
         { platform: "twitter", icon: "bi-twitter-x", href: "#" },
         { platform: "facebook", icon: "bi-facebook", href: "#" },
-        { platform: "instagram", icon: "bi-instagram", href: "#" },
         { platform: "linkedin", icon: "bi-linkedin", href: "#" }
       ],
       
@@ -99,82 +99,83 @@
         description: "A little peek at the magic we’ve been cooking.. because our work speaks louder than captions!",
         filters: [
           { name: "All", filter: "*", active: true },
-          { name: "App", filter: ".filter-app", active: false },
-          { name: "Card", filter: ".filter-product", active: false },
-          { name: "Web", filter: ".filter-branding", active: false }
+          { name: "Food", filter: ".filter-food", active: false },
+          { name: "Apps", filter: ".filter-apps", active: false },
+          { name: "Chalet", filter: ".filter-chalet", active: false },
+          { name: "Other", filter: ".filter-other", active: false }
         ],
         items: [
           {
-            title: "App 1",
-            description: "Lorem ipsum, dolor sit",
+            title: "Karam Jdoudna",
+            description: "",
             image: "assets/img/masonry-portfolio/karamjdoudnalogo.png",
-            category: "filter-app",
-            gallery: "portfolio-gallery-app"
-            //Link: https://www.instagram.com/karamjdoudna/
+            category: "filter-food",
+            gallery: "portfolio-gallery-app",
+            link: "https://www.instagram.com/karamjdoudna/"
           },
           {
-            title: "Product 1",
-            description: "Lorem ipsum, dolor sit",
+            title: "Soulist",
+            description: "",
             image: "assets/img/masonry-portfolio/soulistlogo.png",
-            category: "filter-product",
-            gallery: "portfolio-gallery-product"
-            //Link: https://www.instagram.com/soulist.bungalows/
+            category: "filter-chalet",
+            gallery: "portfolio-gallery-product",
+            link: "https://www.instagram.com/soulist.bungalows/"
           },
           {
-            title: "Branding 1",
-            description: "Lorem ipsum, dolor sit",
+            title: "Elysium",
+            description: "",
             image: "assets/img/masonry-portfolio/Elysiumlogo.png",
-            category: "filter-branding",
-            gallery: "portfolio-gallery-branding"
-            //Link: https://www.instagram.com/elysium.wedding.boutique/
+            category: "filter-other",
+            gallery: "portfolio-gallery-branding",
+            link: "https://www.instagram.com/elysium.wedding.boutique/"
           },
           {
-            title: "App 2",
-            description: "Lorem ipsum, dolor sit",
+            title: "Food Master",
+            description: "",
             image: "assets/img/masonry-portfolio/foodmasterlogo.png",
-            category: "filter-app",
-            gallery: "portfolio-gallery-app"
-            //Link: https://www.instagram.com/foodmaster.lb/
+            category: "filter-food",
+            gallery: "portfolio-gallery-app",
+            link: "https://www.instagram.com/foodmaster.lb/"
           },
           {
-            title: "Product 2",
-            description: "Lorem ipsum, dolor sit",
+            title: "Loaded & More",
+            description: "",
             image: "assets/img/masonry-portfolio/loadedlogo.png",
-            category: "filter-product",
-            gallery: "portfolio-gallery-product"
-            //Link: https://www.instagram.com/loadedandmore/
+            category: "filter-food",
+            gallery: "portfolio-gallery-product",
+            link: "https://www.instagram.com/loadedandmore/"
           },
           {
-            title: "Branding 2",
-            description: "Lorem ipsum, dolor sit",
+            title: "Yalla Notlob",
+            description: "",
             image: "assets/img/masonry-portfolio/yallanotloblogo.png",
-            category: "filter-branding",
-            gallery: "portfolio-gallery-branding"
-            //Link: https://www.instagram.com/yallanotlob/
+            category: "filter-apps",
+            gallery: "portfolio-gallery-branding",
+            link: "https://www.instagram.com/yallanotlob/"
           },
           {
-            title: "App 3",
-            description: "Lorem ipsum, dolor sit",
+            title: "TRTE",
+            description: "The RobTec Engineer",
             image: "assets/img/masonry-portfolio/TRTELogo.png",
-            category: "filter-app",
-            gallery: "portfolio-gallery-app"
-            //Link: https://www.instagram.com/therobtecengineer/
+            category: "filter-other",
+            gallery: "portfolio-gallery-app",
+            link: "https://www.instagram.com/therobtecengineer/"
           },
           {
-            title: "Product 3",
-            description: "Lorem ipsum, dolor sit",
+            title: "Azalya",
+            description: "",
             image: "assets/img/masonry-portfolio/azalyalogo.png",
-            category: "filter-product",
-            gallery: "portfolio-gallery-product"
-            //Link: https://www.instagram.com/azalyacoffeeshop/
+            category: "filter-food",
+            gallery: "portfolio-gallery-product",
+            link: "https://www.instagram.com/azalyacoffeeshop/"
           },
           {
-            title: "Branding 3",
-            description: "Lorem ipsum, dolor sit",
+            title: "Brandless",
+            description: "",
             image: "assets/img/masonry-portfolio/brandlesslogo.png",
-            category: "filter-branding",
-            gallery: "portfolio-gallery-branding"
-            //Link: https://www.instagram.com/brand_less.lb/
+            category: "filter-other",
+            gallery: "portfolio-gallery-branding",
+            link: "https://www.instagram.com/brand_less.lb/"
           }
         ]
       },
@@ -436,111 +437,14 @@
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-chalet">Chalet</li>
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul> -->
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            <!-- Portfolio items will be populated by JavaScript -->
             </div><!-- End Portfolio Container -->
 
         </div>
@@ -585,7 +489,7 @@
                     <i class="bi bi-envelope flex-shrink-0"></i>
                     <div>
                       <h3>Email Us</h3>
-                      <p>igrowithrita@gmail.com</p>
+                      <p>Ritashmait99@gmail.com</p>
                     </div>
                   </div><!-- End Info Item -->
                 </div>
@@ -654,7 +558,8 @@
 
   <!-- Dynamic Content Population Script -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+                // Populate content immediately when script loads
+                (function () {
       // Populate site title and subtitle
       document.getElementById('site-title').textContent = websiteData.site.title;
       document.getElementById('site-subtitle').textContent = websiteData.site.subtitle;
@@ -726,35 +631,36 @@
       portfolioDescription.textContent = websiteData.portfolio.description;
       
       // Populate portfolio filters
-      const portfolioFilters = document.querySelector('.portfolio-filters');
-      portfolioFilters.innerHTML = '';
-      websiteData.portfolio.filters.forEach(filter => {
-        const li = document.createElement('li');
-        li.setAttribute('data-filter', filter.filter);
-        li.textContent = filter.name;
-        if (filter.active) {
-          li.className = 'filter-active';
-        }
-        portfolioFilters.appendChild(li);
-      });
+                // const portfolioFilters = document.querySelector('.portfolio-filters');
+                // portfolioFilters.innerHTML = '';
+                // websiteData.portfolio.filters.forEach(filter => {
+                //   const li = document.createElement('li');
+                //   li.setAttribute('data-filter', filter.filter);
+                //   li.textContent = filter.name;
+                //   if (filter.active) {
+                //     li.className = 'filter-active';
+                //   }
+                //   portfolioFilters.appendChild(li);
+                // });
       
       // Populate portfolio items
       const portfolioContainer = document.querySelector('.isotope-container');
       portfolioContainer.innerHTML = '';
       websiteData.portfolio.items.forEach(item => {
-        const portfolioHTML = `
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item ${item.category}">
-            <img src="${item.image}" class="img-fluid" alt="">
+        const portfolioItem = document.createElement('div');
+        portfolioItem.className = `col-lg-4 col-md-6 portfolio-item isotope-item ${item.category}`;
+
+        portfolioItem.innerHTML = `
+          <a href="${item.link}" title="Visit ${item.title}" target="_blank" class="details-link">
+            <img src="${item.image}" class="img-fluid" alt="${item.title}">
             <div class="portfolio-info">
               <h4>${item.title}</h4>
               <p>${item.description}</p>
-              <a href="${item.image}" title="${item.title}" data-gallery="${item.gallery}"
-                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
-          </div>
+          </a>
         `;
-        portfolioContainer.innerHTML += portfolioHTML;
+
+        portfolioContainer.appendChild(portfolioItem);
       });
       
       // Populate contact section
@@ -783,7 +689,7 @@
       const mapContainer = document.querySelector('.map-wrap iframe');
       mapContainer.src = websiteData.contact.map.src;
       mapContainer.style.height = websiteData.contact.map.height;
-    });
+              })();
   </script>
 
 </body>
