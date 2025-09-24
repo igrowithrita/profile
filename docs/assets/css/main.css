@@ -1309,13 +1309,10 @@ section,
 
 /* Center single portfolio items when there's only one in a row */
 .portfolio .isotope-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.portfolio .isotope-container .portfolio-item {
-  margin: 0 15px 30px 15px;
+  position: relative;
+    /* needed for absolutely-positioned items */
+    margin: 0 auto;
+    /* centers the grid when fitWidth is enabled */
 }
 /*--------------------------------------------------------------
 # Portfolio Details Section
